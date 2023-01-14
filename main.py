@@ -8,11 +8,11 @@ def start(message):
 
 @bot.message_handler()
 def get_user_text(message):
-    if message.text.lover () == "нормально":
+    if message.text == "нормально":
         bot.send_message(message.chat.id, 'А я устал что-то!', parse_mode='html')
-    elif message.text.lover () == "хорошо":
+    elif message.text == "хорошо":
         bot.send_message(message.chat.id, 'Тебе то хорошо, сам таким состоянием не могу похвастаться', parse_mode='html')
-    elif message.text.lover () == "пойдёт":
+    elif message.text == "пойдёт":
         bot.send_message(message.chat.id, 'В смысле поёдет, давай подробнее!!', parse_mode='html')
     else:
         bot.send_message(message.chat.id, 'Расслабься! Когда ЧБД? https://www.youtube.com/shorts/iURj2GdSvZA', parse_mode='html')
